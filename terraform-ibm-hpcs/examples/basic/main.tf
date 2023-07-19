@@ -21,9 +21,10 @@ module "hpcs_instance" {
   service_endpoints = "public-and-private"
 }
 
+/*
 module "kms_key_ring" {
   source      = "./terraform-ibm-kms-key-ring"
   endpoint_type = "public"
   instance_id = module.hpcs_instance.guid
   key_ring_id = "${var.prefix}-key-ring"
-}
+} */
