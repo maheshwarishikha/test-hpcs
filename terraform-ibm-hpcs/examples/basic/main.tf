@@ -25,6 +25,6 @@ module "hpcs_instance" {
 module "kms_key_ring" {
   source      = "./terraform-ibm-kms-key-ring"
   endpoint_type = "public"
-  instance_id = "9a0d600d-833a-4a9e-800c-6f55107c163d" #module.hpcs_instance.guid
+  instance_id = "9a0d600d-833a-4a9e-800c-6f55107c163d" 
   key_ring_id = "${var.prefix}-key-ring"
 } 
